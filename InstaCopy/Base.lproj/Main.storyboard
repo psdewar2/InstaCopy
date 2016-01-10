@@ -25,13 +25,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="349"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DTQ-tE-nlZ">
+                                                    <rect key="frame" x="27" y="0.0" width="31" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Bri-Pa-FHT">
-                                                    <rect key="frame" x="27" y="15" width="320" height="320"/>
+                                                    <rect key="frame" x="27" y="21" width="320" height="320"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
+                                            <outlet property="likeCountText" destination="DTQ-tE-nlZ" id="wkM-mZ-OFU"/>
                                             <outlet property="popularPic" destination="Bri-Pa-FHT" id="mef-7x-S20"/>
                                         </connections>
                                     </tableViewCell>

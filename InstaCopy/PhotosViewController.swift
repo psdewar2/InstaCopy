@@ -70,6 +70,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         let popularPicUrl = NSURL(string: result_url)
         cell.popularPic.setImageWithURL(popularPicUrl!)
         
+        let result_likes = result["likes"] as! NSDictionary
+        let result_likeCount = result_likes["count"] as! Int
+        
+        cell.likeCountText.text = String("Likes: \(result_likeCount)")
+        cell.likeCountText.sizeToFit()
+        
         return cell
             }
     

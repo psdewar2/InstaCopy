@@ -11,6 +11,7 @@ import UIKit
 class InstaCell: UITableViewCell {
 
     @IBOutlet var popularPic: UIImageView!
+    @IBOutlet var likeCountText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
