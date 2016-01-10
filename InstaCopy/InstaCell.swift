@@ -9,18 +9,13 @@
 import UIKit
 
 class InstaCell: UITableViewCell {
-    
-    @IBOutlet var usernamePic: UIImageView!
-    @IBOutlet var usernameText: UILabel!
+
     @IBOutlet var popularPic: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        //make circular
-        usernamePic.layer.cornerRadius = usernamePic.frame.height / 2
-        usernamePic.clipsToBounds = true
+
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
